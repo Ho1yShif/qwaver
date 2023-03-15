@@ -77,6 +77,8 @@ If you see any ways that the app could be improved in these ways, let's work on 
     - list tables, list columns, list running queries, kill query
 - Read-only mode to disable CRUD functionality
 - Manage DB connection (instead of removing current one or setting up a new one)
+- De-deuplicate DB Connections: Don't allow for two DB connections (for each user) with the same name
+    - Currently, you're able to hit the submit button as many times as you want and create multiple of the same connection, but that shouldn't be possible
 
 ## Small Things
 - returned row count added to result model; show this in results sidebar on query page
